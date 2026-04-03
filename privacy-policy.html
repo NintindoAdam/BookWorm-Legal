@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — BookWorm</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5F0E8;
+      --cream-dark: #EDE6D6;
+      --brown: #5C3D1E;
+      --brown-light: #8B6340;
+      --green: #3A6B4A;
+      --text: #2C1F0F;
+      --text-muted: #7A6248;
+      --border: #D4C4A8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* Header */
+    header {
+      background: var(--brown);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(0,0,0,0.15) 0%, transparent 60%);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    .worm-emoji { font-size: 1.1rem; }
+
+    .app-badge span {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.875rem;
+      position: relative;
+    }
+
+    /* Main content */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    section { margin-bottom: 3rem; }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--brown);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--cream-dark);
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--brown-light);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p { margin-bottom: 0.9rem; color: var(--text); }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 0.9rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(58,107,74,0.3);
+      transition: border-color 0.2s;
+    }
+    a:hover { border-color: var(--green); }
+
+    /* Info box */
+    .info-box {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--brown-light);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* Rights grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.8rem;
+      margin: 1rem 0;
+    }
+
+    .right-item {
+      background: var(--cream-dark);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .right-item strong {
+      display: block;
+      color: var(--brown);
+      margin-bottom: 0.3rem;
+      font-size: 0.8rem;
+    }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .data-table th {
+      background: var(--cream-dark);
+      color: var(--brown);
+      font-weight: 500;
+      text-align: left;
+      padding: 0.7rem 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .data-table td {
+      padding: 0.7rem 1rem;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    /* Korean section */
+    .korean-section {
+      background: var(--cream-dark);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .korean-section h3 {
+      color: var(--brown);
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--brown);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+    }
+
+    footer a { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.3); }
+
+    @media (max-width: 600px) {
+      .summary-table th:nth-child(2), .summary-table td:nth-child(2) { display: none; }
+      .rights-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">
+    <span class="worm-emoji">🐛</span>
+    <span>BookWorm</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Effective Date: March 30, 2026 &nbsp;·&nbsp; Version 1.0</p>
+</header>
+
+
+<main>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>BookWorm is a personal reading tracker app that helps you log books, track reading progress, build reading streaks, and set daily reading goals. It is available on iOS through the Apple App Store.</p>
+    <p>This Privacy Policy describes how your information is collected, used, and shared when you use BookWorm. It applies to all users worldwide, regardless of location.</p>
+    <p><strong>Data Controller:</strong> Adam Markocki, based in Poland (European Union), is the Data Controller under GDPR for any personal data processed through BookWorm.</p>
+    <p><strong>Contact:</strong> <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a></p>
+  </section>
+
+  <section>
+    <h2>2. Data We Collect and How</h2>
+
+    <h3>2.1 Data Stored Locally Only</h3>
+    <p>Your book library, reading log, streaks, daily goals, profile photo, username, and app preferences are stored on your device. This data syncs to your private iCloud account via Apple CloudKit if you are signed in — it is never sent to the developer or any third-party server. Your profile photo is stored on-device only and explicitly excluded from iCloud backup.</p>
+
+    <h3>2.2 Anonymous Analytics (PostHog)</h3>
+    <p>The app sends anonymous behavioural events to PostHog's EU Cloud (Frankfurt, Germany). Events describe how you use the app — for example, that a book was added — but never include book titles, usernames, email addresses, or any personally identifiable information. A pseudonymous device-level ID is generated by the PostHog SDK. No <code>identify()</code> call is made.</p>
+    <p><strong>Legal basis (GDPR):</strong> Legitimate interest (Article 6(1)(f)).</p>
+
+    <h3>2.3 Book Search Queries (Google Books API)</h3>
+    <p>When you search for a book by title, author, or ISBN (including via barcode), the search term is sent over HTTPS to the Google Books API. No user identifiers or personal information are included. The developer does not retain these queries.</p>
+
+    <h3>2.4 Camera and Barcode Scanning</h3>
+    <p>Camera frames are processed entirely on-device using Apple's AVFoundation. No images or video are stored or transmitted. Only the decoded ISBN is used, sent solely to Google Books for metadata lookup.</p>
+
+    <h3>2.5 Push Notifications</h3>
+    <p>All notifications are scheduled locally using Apple's UNUserNotificationCenter. No remote push service is used. Notification content is generated on your device and never transmitted anywhere.</p>
+
+    <h3>2.6 Profile Photo</h3>
+    <p>Your optional profile photo is stored as a JPEG on your device, excluded from iCloud backup, and never transmitted to any server.</p>
+  </section>
+
+  <section>
+    <h2>3. Third-Party Service Providers</h2>
+
+    <h3>PostHog EU Analytics</h3>
+    <p>PostHog, Inc. — AWS eu-central-1, Frankfurt, Germany. No IP addresses stored. <a href="https://posthog.com/privacy" target="_blank">PostHog Privacy Policy</a> · <a href="https://posthog.com/dpa" target="_blank">DPA</a></p>
+
+    <h3>Apple Inc.</h3>
+    <p>App Store transactions, iCloud CloudKit sync, and local notification delivery. Your CloudKit data is stored under your Apple ID and is inaccessible to the developer. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
+
+    <h3>Google LLC (Google Books API)</h3>
+    <p>Book metadata queries (ISBN/title). No user identifiers included in any request. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+  </section>
+
+  <section>
+    <h2>4. Your Rights Under GDPR (EU/EEA Users)</h2>
+    <div class="rights-grid">
+      <div class="right-item"><strong>Access (Art. 15)</strong>Use "Export My Data" in Settings to download your data as JSON.</div>
+      <div class="right-item"><strong>Rectification (Art. 16)</strong>Edit your books, profile, or settings directly in the app.</div>
+      <div class="right-item"><strong>Erasure (Art. 17)</strong>Use "Reset All Data" in Settings, or delete the app.</div>
+      <div class="right-item"><strong>Portability (Art. 20)</strong>Export your data as JSON via Settings → Export My Data.</div>
+      <div class="right-item"><strong>Object (Art. 21)</strong>Contact markockidev@icloud.com to object to analytics processing.</div>
+      <div class="right-item"><strong>No automated decisions</strong>BookWorm makes no automated decisions about you.</div>
+    </div>
+    <p>Supervisory authority: <strong>Urząd Ochrony Danych Osobowych (UODO)</strong>, ul. Stawki 2, 00-193 Warszawa — <a href="https://uodo.gov.pl" target="_blank">uodo.gov.pl</a></p>
+  </section>
+
+  <section>
+    <h2>5. Your Rights in Other Jurisdictions</h2>
+
+    <h3>Brazil (LGPD)</h3>
+    <p>You have rights to access, correct, delete, and port your data. Contact: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a>. Response within 15 days. Supervisory authority: <a href="https://www.gov.br/anpd" target="_blank">ANPD</a>.</p>
+
+    <h3>South Korea (PIPA)</h3>
+    <p>Rights to access, correct, delete, suspend processing, and port your data. Contact: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a>. Supervisory authority: <a href="https://www.pipc.go.kr" target="_blank">PIPC</a>.</p>
+
+    <h3>Japan (APPI)</h3>
+    <p>Rights to disclosure, correction, cessation of use or deletion, and cessation of provision to third parties. Contact: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a>. Supervisory authority: <a href="https://www.ppc.go.jp" target="_blank">PPC</a>.</p>
+
+    <h3>India (DPDP Act 2023)</h3>
+    <p>Rights to access, correct, erase, and withdraw consent. Contact: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a>. Full enforcement expected 2027.</p>
+
+    <h3>United States</h3>
+    <p>BookWorm does not meet CCPA thresholds. The app does not collect personal information from children under 13 (COPPA compliance). California residents may contact <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>6. Subscriptions and Payments</h2>
+    <p>All payments are processed by Apple. The developer never receives, stores, or processes your payment card information or billing details. Manage or cancel via <strong>Settings → [your name] → Subscriptions</strong>.</p>
+    <div class="info-box">
+      <strong>Free trial:</strong> 7-day free trial available for new subscribers. Auto-renews unless cancelled at least 24 hours before the end of the trial period.
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Data Retention</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Retention</th><th>How to delete</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Local reading data</td><td>Until app deletion or reset</td><td>Reset All Data in Settings, or delete the app</td></tr>
+        <tr><td>iCloud CloudKit data</td><td>Until iCloud account deletion or in-app reset</td><td>Reset All Data in Settings</td></tr>
+        <tr><td>PostHog analytics events</td><td>90 days (PostHog standard)</td><td>Automatic; contact us for manual deletion</td></tr>
+        <tr><td>Profile photo</td><td>Until removed or app deleted</td><td>Remove in Settings</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>8. Security</h2>
+    <p>All local data is stored in iOS device-protected storage. Analytics and book search queries are transmitted over HTTPS/TLS. CloudKit data is encrypted in transit and at rest by Apple. The developer operates no servers — eliminating server-side breach risk for your reading data.</p>
+  </section>
+
+  <section>
+    <h2>9. Children's Privacy</h2>
+    <p>BookWorm is not directed at children under 13 (US) or 16 (EU). The app includes an age acknowledgment during onboarding. If you believe a child has provided personal information, contact <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a> immediately.</p>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>Material changes will be communicated via in-app notice or App Store update notes at least 30 days before taking effect. The Effective Date at the top of this page will be updated.</p>
+  </section>
+
+  <section>
+    <h2>11. Contact</h2>
+    <p><strong>Adam Markocki</strong><br>
+    Email: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a><br>
+    GDPR requests: within 30 days · LGPD requests: within 15 days</p>
+  </section>
+
+  <div class="korean-section">
+    <h3>한국어 개인정보 처리방침 요약</h3>
+    <p><strong>개인정보처리자:</strong> Adam Markocki / markockidev@icloud.com</p>
+    <p><strong>수집 항목:</strong> 독서 데이터, 사용자 이름(선택), 프로필 사진(선택), 익명 분석 데이터</p>
+    <table class="data-table" style="margin-top:1rem">
+      <thead><tr><th>수신자</th><th>이전 항목</th><th>이전 국가</th><th>목적</th></tr></thead>
+      <tbody>
+        <tr><td>PostHog, Inc.</td><td>익명 분석 이벤트</td><td>독일 (EU)</td><td>앱 사용 분석</td></tr>
+        <tr><td>Google LLC</td><td>도서 검색어</td><td>미국</td><td>도서 메타데이터 조회</td></tr>
+        <tr><td>Apple Inc.</td><td>독서 데이터 (CloudKit)</td><td>Apple 인프라</td><td>iCloud 동기화</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1rem">권리 행사: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a> · 감독기관: <a href="https://www.pipc.go.kr" target="_blank">개인정보보호위원회 (PIPC)</a></p>
+  </div>
+
+</main>
+
+<footer>
+  <p>🐛 BookWorm · <a href="terms-of-service.html">Terms of Service</a> · <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a></p>
+  <p style="margin-top:0.5rem">Last updated: March 30, 2026</p>
+</footer>
+
+</body>
+</html>

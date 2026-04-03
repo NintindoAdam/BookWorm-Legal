@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — BookWorm</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5F0E8;
+      --cream-dark: #EDE6D6;
+      --brown: #5C3D1E;
+      --brown-light: #8B6340;
+      --green: #3A6B4A;
+      --text: #2C1F0F;
+      --text-muted: #7A6248;
+      --border: #D4C4A8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--brown);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(0,0,0,0.15) 0%, transparent 60%);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    .app-badge span {
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.875rem;
+      position: relative;
+    }
+
+    /* Main */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    section { margin-bottom: 3rem; scroll-margin-top: 2rem; }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--brown);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--cream-dark);
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--brown-light);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p { margin-bottom: 0.9rem; }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 0.9rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(58,107,74,0.3);
+      transition: border-color 0.2s;
+    }
+    a:hover { border-color: var(--green); }
+
+    .info-box {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--brown-light);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+
+    .warning-box {
+      background: #fef9ec;
+      border-left: 3px solid #d97706;
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      color: #78350f;
+    }
+
+    .product-ids {
+      background: var(--cream-dark);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      margin: 0.5rem 0;
+    }
+
+    .survive-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.5rem 0;
+    }
+
+    .survive-tag {
+      background: var(--cream-dark);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.78rem;
+      color: var(--brown-light);
+    }
+
+    footer {
+      background: var(--brown);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+    }
+
+    footer a { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">
+    <span>🐛 BookWorm</span>
+  </div>
+  <h1>Terms of Service</h1>
+  <p>Effective Date: March 30, 2026 &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; EULA</p>
+</header>
+
+
+<main>
+
+  <div class="info-box">
+    <strong>Developer:</strong> Adam Markocki, individual sole trader, Poland &nbsp;·&nbsp; <strong>Contact:</strong> <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a><br>
+    <strong>Bundle ID:</strong> com.markockidev.bookworm
+  </div>
+
+  <section id="s1">
+    <h2>1. Parties and Acceptance</h2>
+    <p>This End User License Agreement ("EULA" or "Agreement") is a binding legal agreement between you ("User" or "you") and Adam Markocki, an individual sole trader based in Poland ("Developer," "we," "us," or "our").</p>
+    <p>By downloading, installing, or using BookWorm (the "Licensed Application" or "App"), you agree to be bound by these Terms. If you do not agree, do not download, install, or use the App.</p>
+    <p>You acknowledge that this EULA is between you and Adam Markocki only, and not with Apple. Apple Inc. ("Apple") is a third-party beneficiary of this EULA and, upon your acceptance, Apple will have the right to enforce this EULA against you.</p>
+  </section>
+
+  <section id="s2">
+    <h2>2. License Grant</h2>
+    <p>Subject to your compliance with these Terms, the Developer grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Licensed Application on Apple-branded products that you own or control, solely for your personal, non-commercial purposes and as permitted by the <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">App Store Usage Rules</a>.</p>
+    <p>This license does not constitute a sale of the Licensed Application or any copy thereof. The Licensed Application is licensed, not sold, to you. You may use the App on all devices signed into the same Apple Account, as permitted by the App Store Usage Rules.</p>
+  </section>
+
+  <section id="s3">
+    <h2>3. Permitted and Prohibited Uses</h2>
+    <h3>Permitted</h3>
+    <ul>
+      <li>Personal, non-commercial reading tracking — logging books, recording progress, setting goals, and managing your library.</li>
+    </ul>
+    <h3>Prohibited</h3>
+    <ul>
+      <li>Reverse engineering, decompiling, disassembling, or attempting to derive source code;</li>
+      <li>Sublicensing, selling, transferring, or distributing the App to third parties;</li>
+      <li>Modifying, adapting, or creating derivative works;</li>
+      <li>Using the App to build a competing product or service;</li>
+      <li>Using automated scripts, bots, or scraping tools on the App or its data;</li>
+      <li>Circumventing subscription validation, license verification, or security features;</li>
+      <li>Using the App in violation of any applicable law or regulation.</li>
+    </ul>
+  </section>
+
+  <section id="s4">
+    <h2>4. BookWorm Pro Subscription</h2>
+
+    <h3>4.1 Subscription Options</h3>
+    <p>BookWorm Pro is available as two auto-renewing subscription options managed entirely through Apple In-App Purchase:</p>
+    <div class="product-ids">
+      com.markockidev.bookworm.monthly &nbsp;·&nbsp; BookWorm Pro Monthly<br>
+      com.markockidev.bookworm.annual &nbsp;·&nbsp; BookWorm Pro Annual
+    </div>
+
+    <h3>4.2 Free Trial</h3>
+    <p>BookWorm Pro includes a <strong>7-day free trial</strong> for new subscribers. After the trial, your subscription automatically renews at the applicable price unless cancelled at least 24 hours before the end of the trial. Your Apple Account is charged within 24 hours prior to the end of each billing period. Any unused portion of a free trial is forfeited upon subscription purchase.</p>
+
+    <h3>4.3 Payment and Billing</h3>
+    <p>All payments are processed by Apple through the App Store. The Developer never receives, stores, or has access to your payment card information, billing address, or financial details.</p>
+
+    <h3>4.4 Cancellation and Refunds</h3>
+    <p>Cancel at any time via <strong>Settings → [your name] → Subscriptions</strong>. Refund requests must be submitted to Apple at <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>. No partial refunds for unused subscription time; access continues until the end of the billing period.</p>
+
+    <h3>4.5 Free Tier</h3>
+    <p>BookWorm is free to download. The core reading tracker is available to all users. Specific premium features require an active BookWorm Pro subscription.</p>
+
+    <h3>4.6 EU 14-Day Withdrawal Right</h3>
+    <p>For EU/EEA users: You have a statutory 14-day right of withdrawal under EU Directive 2011/83/EU. By beginning to use digital content immediately upon purchase, you expressly consent to immediate performance and acknowledge forfeiture of withdrawal rights once the digital content has been fully delivered (Article 16(m) of Directive 2011/83/EU). This does not affect your rights under Apple's refund policy.</p>
+  </section>
+
+  <section id="s5">
+    <h2>5. Data Storage and Backup Responsibility</h2>
+    <p>BookWorm stores your reading data on your device and in your personal iCloud account via Apple CloudKit (if signed in to iCloud). CloudKit uses Apple's private database — your data is not accessible to the Developer or other users.</p>
+    <div class="warning-box">
+      THE DEVELOPER DOES NOT OPERATE ANY SERVERS AND DOES NOT INDEPENDENTLY BACK UP YOUR DATA. YOU ARE SOLELY RESPONSIBLE FOR DEVICE BACKUPS. WE ARE NOT LIABLE FOR ANY DATA LOSS RESULTING FROM DEVICE LOSS, THEFT, SOFTWARE UPDATES, APP DELETION, OR ANY OTHER CAUSE.
+    </div>
+    <p>The Export feature (Settings → Export My Data, JSON format) is provided as a convenience. We strongly recommend exporting your data regularly.</p>
+  </section>
+
+  <section id="s6">
+    <h2>6. Third-Party Services and Disclaimers</h2>
+
+    <h3>6.1 Google Books API</h3>
+    <p>Book metadata is provided by Google LLC. The Developer does not guarantee accuracy or availability. Use is subject to <a href="https://policies.google.com/terms" target="_blank">Google's Terms of Service</a>.</p>
+
+    <h3>6.2 PostHog Analytics</h3>
+    <p>The App uses PostHog for anonymous analytics — no personally identifiable information is transmitted. Data processed in the EU (Frankfurt, Germany). See our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+
+    <h3>6.3 Apple Services</h3>
+    <p>App Store, In-App Purchases, iCloud CloudKit, and notifications are Apple services subject to Apple's terms. The Developer is not responsible for Apple service outages or iCloud storage limits.</p>
+  </section>
+
+  <section id="s7">
+    <h2>7. Intellectual Property</h2>
+    <p>The Licensed Application — including source code, design, user interface, graphics, animations, the "BookWorm" name, the worm mascot character, and all associated visual elements — is owned by Adam Markocki and protected by copyright, trademark, and other intellectual property laws of Poland, the EU, and applicable international treaties.</p>
+    <p>No rights are granted except the limited license in Section 2.</p>
+    <p><strong>Your data belongs to you.</strong> Book lists, reading logs, notes, and profile information you create remain your property. The Developer claims no ownership over your personal reading data.</p>
+  </section>
+
+  <section id="s8">
+    <h2>8. Maintenance, Support, and Updates</h2>
+    <p>Adam Markocki is solely responsible for maintenance and support. Apple has no obligation to furnish any maintenance or support services.</p>
+    <p>Support via email: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a> on a best-efforts basis. The Developer will endeavour to respond within a reasonable timeframe. Updates may be required for continued use.</p>
+  </section>
+
+  <section id="s9">
+    <h2>9. Warranty Disclaimer</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT.</p>
+    <p>If any implied warranty cannot be excluded, such warranty is limited to 90 days from first download, or the minimum period required by law.</p>
+    <p><strong>EU/EEA consumers:</strong> Nothing here affects your statutory rights under EU Directive 2019/770, including your right to a minimum 2-year guarantee of conformity.</p>
+    <p>In the event of failure to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price. To the maximum extent permitted by law, Apple will have no other warranty obligation.</p>
+  </section>
+
+  <section id="s10">
+    <h2>10. Limitation of Liability</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL ADAM MARKOCKI BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF OR INABILITY TO USE THE APP.</p>
+    <p>TOTAL CUMULATIVE LIABILITY WILL NOT EXCEED THE GREATER OF (A) AMOUNTS PAID IN THE PRECEDING 12 MONTHS, OR (B) EUR 10.</p>
+    <p>Nothing excludes liability for: (i) death or personal injury caused by negligence; (ii) fraud or fraudulent misrepresentation; or (iii) liability that cannot be limited by applicable law.</p>
+    <p><strong>EU/EEA consumers:</strong> Mandatory consumer protection rights under Directive 2011/83/EU are not affected.</p>
+  </section>
+
+  <section id="s11">
+    <h2>11. Product Claims</h2>
+    <p>Adam Markocki, not Apple, is responsible for addressing any claims relating to the Licensed Application, including product liability claims, claims that the App fails to conform to legal requirements, and claims under consumer protection, privacy, or data protection legislation.</p>
+  </section>
+
+  <section id="s12">
+    <h2>12. Intellectual Property Infringement Claims</h2>
+    <p>In the event of any third-party claim that the Licensed Application infringes intellectual property rights, Adam Markocki, not Apple, will be solely responsible for the investigation, defence, settlement, and discharge of any such claim.</p>
+  </section>
+
+  <section id="s13">
+    <h2>13. Export Compliance</h2>
+    <p>You represent and warrant that (i) you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</p>
+  </section>
+
+  <section id="s14">
+    <h2>14. Governing Law and Dispute Resolution</h2>
+    <p>These Terms are governed by the laws of Poland, without regard to conflict of law provisions.</p>
+    <p><strong>EU consumers:</strong> Mandatory consumer protection provisions of your country of habitual residence apply in accordance with Article 6 of Rome I Regulation (EC) No 593/2008. The Developer and User will attempt to resolve disputes amicably within 30 days of written notice.</p>
+    <p><strong>EU Online Dispute Resolution:</strong> <a href="https://ec.europa.eu/consumers/odr/" target="_blank">ec.europa.eu/consumers/odr</a></p>
+  </section>
+
+  <section id="s15">
+    <h2>15. Modification of Terms</h2>
+    <p>Material changes will be communicated via in-app notice or App Store update notes at least <strong>30 days</strong> before taking effect. The Effective Date at the top of this document will be updated. Continued use after the new effective date constitutes acceptance.</p>
+  </section>
+
+  <section id="s16">
+    <h2>16. Termination</h2>
+    <p>The Developer may terminate this license immediately if you breach any provision of these Terms, including reverse engineering, IP infringement, circumventing subscription verification, or illegal use.</p>
+    <p>Upon termination, cease all use and delete all copies from your devices.</p>
+    <p><strong>Sections that survive termination:</strong></p>
+    <div class="survive-list">
+      <span class="survive-tag">§7 Intellectual Property</span>
+      <span class="survive-tag">§9 Warranty Disclaimer</span>
+      <span class="survive-tag">§10 Limitation of Liability</span>
+      <span class="survive-tag">§12 IP Infringement Claims</span>
+      <span class="survive-tag">§13 Export Compliance</span>
+      <span class="survive-tag">§14 Governing Law</span>
+    </div>
+  </section>
+
+  <section id="s17">
+    <h2>17. Severability and Entire Agreement</h2>
+    <p>If any provision is held invalid or unenforceable, it shall be modified to the minimum extent necessary, and remaining provisions continue in full force.</p>
+    <p>These Terms, together with the <a href="privacy-policy.html">Privacy Policy</a>, constitute the entire agreement between you and Adam Markocki regarding the Licensed Application and supersede all prior agreements.</p>
+  </section>
+
+  <section id="s18">
+    <h2>18. Developer Contact</h2>
+    <p><strong>Adam Markocki</strong><br>
+    Email: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a><br>
+    Support: <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a></p>
+    <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 1rem;">These Terms of Service were last updated on March 30, 2026.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>🐛 BookWorm · <a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:markockidev@icloud.com">markockidev@icloud.com</a></p>
+  <p style="margin-top:0.5rem">Last updated: March 30, 2026</p>
+</footer>
+
+</body>
+</html>
